@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Navbar from "@/components/layout/Navbar";
-import { Wheelchair, Shield, Users, Award } from "lucide-react";
+import { Accessibility, Shield, Users, Award } from "lucide-react";
 import AnimatedTransition from '@/components/ui/AnimatedTransition';
 
 const Index = () => {
@@ -20,7 +20,7 @@ const Index = () => {
   // Features section data
   const features = [
     {
-      icon: Wheelchair,
+      icon: Accessibility,
       title: "Accessible Vehicles",
       description: "Our entire fleet is designed for wheelchair users with ramps, lifts, and secure fastening systems."
     },

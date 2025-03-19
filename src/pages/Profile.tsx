@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/layout/Navbar';
 import AnimatedTransition from '@/components/ui/AnimatedTransition';
-import { User, Settings, Clock, MapPin, Bell, Shield, Wheelchair, Save, Edit2 } from 'lucide-react';
+import { User, Settings, Clock, MapPin, Bell, Shield, Accessibility, Save, Edit2 } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Profile = () => {
@@ -245,7 +244,7 @@ const Profile = () => {
               <div className="flex flex-wrap gap-2 mb-4">
                 {profileData.preferredAccessibility.map((preference, index) => (
                   <div key={index} className="bg-primary/10 text-primary rounded-full px-3 py-1 text-sm font-medium flex items-center">
-                    <Wheelchair size={14} className="mr-1" />
+                    <Accessibility size={14} className="mr-1" />
                     {preference}
                   </div>
                 ))}

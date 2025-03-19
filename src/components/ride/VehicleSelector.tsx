@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle2, Car, MinusCircle, PlusCircle, Users, Clock, Wheelchair } from 'lucide-react';
+import { CheckCircle2, Car, MinusCircle, PlusCircle, Users, Clock, Accessibility } from 'lucide-react';
 
 interface Vehicle {
   id: string;
@@ -123,7 +123,7 @@ const VehicleSelector = ({ onVehicleSelect }: VehicleSelectorProps) => {
                       <span>{vehicle.eta} min</span>
                     </div>
                     <div className="flex items-center text-sm text-muted-foreground">
-                      <Wheelchair size={16} className="mr-1" />
+                      <Accessibility size={16} className="mr-1" />
                       <span>Accessible</span>
                     </div>
                     <div className="flex items-center text-sm text-muted-foreground">

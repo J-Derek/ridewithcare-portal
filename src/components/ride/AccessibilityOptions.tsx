@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import { Wheelchair, HandMetal, Speech, Eye, Zap } from 'lucide-react';
+import { Accessibility, HandMetal, Speech, Eye, Zap } from 'lucide-react';
 
 type AccessibilityOptionProps = {
   icon: React.ElementType;
@@ -70,7 +70,7 @@ const AccessibilityOptions = ({ onOptionsChange }: AccessibilityOptionsProps) =>
   const options = [
     {
       id: 'wheelchair',
-      icon: Wheelchair,
+      icon: Accessibility,
       label: 'Wheelchair Access',
       description: 'Vehicle with ramp or lift for wheelchair users'
     },
